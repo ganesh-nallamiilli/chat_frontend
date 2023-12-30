@@ -7,8 +7,8 @@ function App() {
   const [change, setChange] = useState(false)
   const [name, setName] = useState("Anonymous")
   const [tempName, setTempName] = useState(name)
-  const [message, setMessage] = useState(null)
-  const [receiveMessage, setReceiveMessage] = useState(null)
+  const [message, setMessage] = useState([])
+  const [receiveMessage, setReceiveMessage] = useState([])
   const handleChange = () => {
     setChange(!change)
   }
@@ -23,7 +23,7 @@ function App() {
 
   useEffect(() => {
     socket.on("receive_message", (data) => {
-      setReceiveMessage(data?.message)
+      setReceiveMessage(prev => [...prev, data?.message])
     })
   }, [socket])
 

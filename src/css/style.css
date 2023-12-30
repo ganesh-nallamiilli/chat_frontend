@@ -1,0 +1,42 @@
+*{
+    font-family: sans-serif;
+}
+.homePage{
+    /* https://i.ytimg.com/vi/uDbKtpIezfQ/maxresdefault.jpg */
+    /* https://mdreducation.com/wp-content/uploads/2023/06/GettyImages-1413735503.jpg */
+    /* https://videohive.img.customer.envatousercontent.com/files/6bb12245-8a71-4af7-b424-45b8598e6420/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=2cf3752c417b811e19973a231b4a273d */
+    /* https://w0.peakpx.com/wallpaper/868/430/HD-wallpaper-social-networks-blue-background-social-networks-icons-blue-light-globe-global-networks-social-networks-blue-background-social-networks-concepts-thumbnail.jpg */
+    /* https://i.pinimg.com/originals/b5/51/27/b55127acf10196a93c30f44c1114c912.jpg */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('https://i.pinimg.com/originals/b5/51/27/b55127acf10196a93c30f44c1114c912.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contentBox{
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.337);
+    box-shadow: 0 0 10px 1px gray;
+}
+.submitButton{
+    background-color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.submitButton:hover{
+    background-color: #16B0CA;
+}
+
+.inputBox{
+    background-color: rgba(128, 128, 128, 0.382);
+    outline: none;
+    box-shadow: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+.inputBox:focus{
+    background-color: rgba(255, 255, 255, 0.5);
+}
